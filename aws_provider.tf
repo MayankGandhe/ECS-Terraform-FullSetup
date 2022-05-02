@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "livefurnish-tfstate"
-    key    = "application/ecs.tfstate"
+    bucket = "BUCKET_NAME"
+    key    = "KEY_NAME"
     region = "us-east-1"
   }
 }
