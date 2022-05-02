@@ -15,7 +15,7 @@ module "ECS_celery" {
   envVariables     = local.envVariables
   cluster_id       = aws_ecs_cluster.cluster.id
   app_name         = "celery"
-  command          = ["sh", "runCelery.sh"]
+  command          = ["sh", "entrypoint.sh"]
   environment      = var.environment
 
 
